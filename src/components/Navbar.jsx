@@ -4,15 +4,13 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <div className='nav-bar'>
-            <ul className='nav-ul'>
-                <li className='nav-li'>
-                    <Link to='/'>Daily Tracker</Link>
-                </li>
+            <ul>
                 <li>
-                    <Link to='/casinostone'>Ability Stone</Link>
+                    <a href='https://jgallagher.github.io/lostark-refining/'>Ability Stone</a>
                 </li>
+                <br />
                 <li>
-                    <Link to='/engraving'>Engraving Calculator</Link>
+                    <a href='https://loa-todo.com/engrave'>Engraving Calculator</a>
                 </li>
             </ul>
         </div>

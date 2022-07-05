@@ -40,37 +40,70 @@ body {
   color: var(--font-color);
 }
 
+hr {
+  width: 100%;
+}
+
 a {
   color: var(--link-color);
 }
 
-.container {
-  width: 100%;
+a:link, a:active {
+  text-decoration: none;
+}
+
+.bg-container {
+  /* width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px; */
+  border: 4px solid;
+  border-color: red;
 
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .app {
+  border: 4px solid;
+  border-color: rgb(21, 151, 75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-size: 1.4em;
-  text-align: center;
+  gap: 20px;
 }
 
 .title {
-  font-size: 1.3em;
+  border: 4px solid;
+  border-color: rgb(63, 1, 209);
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.4em;
   font-weight: bold;
-
-  margin-top: 5%;
 }
 
-.checkList {
-  padding-top: 10px;
-}
+/* .list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+} */
 
 .list-container {
-  padding: 20px;
+  border: 4px solid;
+  border-color: rgb(176, 196, 0);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
 }
 
 /* [type="checkbox"] 
@@ -79,8 +112,14 @@ a {
   padding: 20px;
 } */
 
-.fin-tasks {
-  font-size: 1.3em;
+.finished-tasks {
+  border: 4px solid;
+  border-color: red;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
@@ -91,12 +130,18 @@ input[type=checkbox] {
 
 /* Navbar */
 .nav-bar {
-  grid-area: nav-wrapper;
-  border-radius: 5px 5px 0 0;
+  /* border: 4px solid;
+  border-color: red; */
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
+
+  font-size: 1.3em;
+  padding: 15px;
+  margin: 5px;
+
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
 
@@ -111,6 +156,22 @@ li {
 
   margin-right: 5px;
   margin-left: 5px;
+}
+
+/* Dropdown and Elements */
+.dropDown-menu {
+  border: 4px solid;
+  border-color: red;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "a b c";
+  align-items: start;
+  font-size: 1.6em;
+}
+
+.elements-menu {
+  font-size: 1.6em;
 }
 
 /* Media queries to check width and height of viewport */

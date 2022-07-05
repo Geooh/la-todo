@@ -5,9 +5,9 @@ function Checklist() {
   const [checked, setChecked] = useState([]);
   const checkList = ["Daily", 
       "Chaos Dungeon", 
-      "Guardian",        
+      "Guardian",
+      "Adventure Island",        
       "World Boss", 
-      "Ghost Ship",
       "Chaos Gate",
     ];
 
@@ -36,7 +36,7 @@ function Checklist() {
   return (
     <div className="app">
       <div className="checkList">
-        <div className="title">Checklist</div>
+        <div className="title">Daily Checklist</div>
         <hr />
         <div className="list-container">
           {checkList.map((item, index) => (
@@ -49,7 +49,7 @@ function Checklist() {
       </div>
     <br></br>
       <div>
-        <div className='fin-tasks'>Finished Tasks</div>
+        <div className='finished-tasks'>Finished Dailies</div>
         <hr />
           {`${checkedItems}`}
       </div>

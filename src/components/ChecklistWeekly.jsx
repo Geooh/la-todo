@@ -4,11 +4,9 @@ function ChecklistWeekly() {
 
     const [checked, setChecked] = useState([]);
     const checkList = [
-        "World Boss", 
         "Boss Rush",
         "Ghost Ship",
-        "Chaos Gate",
-        "Abyss Dungeon",
+        "Abyss Raid",
         "Legion Raid",
     ];
 
@@ -34,8 +32,10 @@ function ChecklistWeekly() {
         checked.includes(item) ? "checked" : "not-checked-item";
 
         return (
-            <div className="app-weekly">
+            <div className="app">
               <div className="checkList">
+              <div className="title">Weekly Checklist</div>
+                <hr />
                 <div className="list-container">
                   {checkList.map((item, index) => (
                     <div key={index}>
@@ -47,7 +47,7 @@ function ChecklistWeekly() {
               </div>
             <br></br>
               <div>
-                {/* <div className='fin-tasks'>Finished Tasks</div> */}
+                <div className='finished-tasks'>Finished Weeklies</div>
                 <hr />
                   {`${checkedItems}`}
               </div>
