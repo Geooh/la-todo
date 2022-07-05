@@ -49,9 +49,9 @@ function Checklist() {
       </div>
     <br></br>
       <div>
-        <div className='finished-tasks'>Finished Dailies</div>
+        {/* <div className='finished-tasks'>Finished Dailies</div>
         <hr />
-          {`${checkedItems}`}
+          {`${checkedItems}`} */}
       </div>
     </div>
   );

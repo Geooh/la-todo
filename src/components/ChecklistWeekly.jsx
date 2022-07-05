@@ -47,9 +47,9 @@ function ChecklistWeekly() {
               </div>
             <br></br>
               <div>
-                <div className='finished-tasks'>Finished Weeklies</div>
+                {/* <div className='finished-tasks'>Finished Weeklies</div>
                 <hr />
-                  {`${checkedItems}`}
+                  {`${checkedItems}`} */}
               </div>
             </div>
           );
