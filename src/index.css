@@ -1,8 +1,9 @@
 :root {
-  --primaryBg: rgb(0, 0, 0);
+  --primaryBg: rgb(255, 255, 255);
+  --secondaryBg: rgb(0,0,0);
 
-  --mainText: #fff;
-  --secondaryText: #fff;
+  --mainText: rgb(0, 0, 0);
+  --secondaryText: rgb(0, 0, 0);
 
   --font-color: #333;
   --background-color: #eee;
@@ -14,10 +15,6 @@
   --background-color: #333;
   --link-color: lightblue;
 }
-
-/* @import url(
-  'https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap'
-); */
 
 @import url(
   'https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&family=Work+Sans:wght@300&display=swap'
@@ -31,8 +28,6 @@ h5 {font-size: 20px;}
 h6 {font-size: 16px;}
 
 * {
-  /* background-color: var(--primaryBg); */
-  /* font-family: 'Chakra Petch', sans-serif; */
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -41,7 +36,7 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--primaryBg);
   color: var(--font-color);
 }
 
@@ -57,25 +52,32 @@ a:link, a:active {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+}
+
 .bg-container {
-  /* width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px; */
+  border: 4px solid;
+  border-color: red;
 
-  /* border: 4px solid;
-  border-color: red; */
+  display: grid;
+  justify-content: center;
+  /* grid-template-areas: "charList blank"
+                       "daily weekly"; */
+  /* grid-template-areas: "a b c"
+                       "d e f"; */
 
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
+  justify-content: center;
   gap: 20px;
 }
 
 .app {
-  /* border: 4px solid;
-  border-color: rgb(21, 151, 75); */
+  border: 4px solid;
+  border-color: rgb(21, 151, 75);
 
   display: flex;
   align-items: center;
@@ -85,9 +87,21 @@ a:link, a:active {
   gap: 20px;
 }
 
+.daily-app-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.weekly-app-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
 .title {
-  /* border: 4px solid;
-  border-color: rgb(63, 1, 209); */
+  border: 4px solid;
+  border-color: rgb(63, 1, 209);
 
   display: flex;
   align-content: center;
@@ -96,37 +110,13 @@ a:link, a:active {
   font-weight: bold;
 }
 
-/* .list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-left: 20px;
-} */
-
 .list-container {
-  /* border: 4px solid;
-  border-color: rgb(176, 196, 0); */
+  border: 4px solid;
+  border-color: rgb(176, 196, 0);
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-}
-
-/* [type="checkbox"] 
-{
-  vertical-align: middle;
-  padding: 20px;
-} */
-
-.finished-tasks {
-  /* border: 4px solid;
-  border-color: red; */
-
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  font-size: 1.4em;
-  font-weight: bold;
 }
 
 /* Checkbox size */
@@ -134,19 +124,34 @@ input[type=checkbox] {
   transform: scale(1.5)
 }
 
-/* Navbar */
-.nav-bar {
-  /* border: 4px solid;
-  border-color: red; */
+/* Link Navigation */
+.nav-wrapper {
+  border: 4px solid;
+  border-color: red;
 
-  display: grid;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.8em;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar-wrapper {
+  border: 4px solid;
+  border-color: red;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  /* display: grid;
   grid-template-columns: 1fr;
-  justify-content: space-between;
+  justify-content: space-between; */
   text-align: center;
 
-  font-size: 1.3em;
-  padding: 15px;
-  margin: 5px;
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 0px;
 
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
@@ -166,8 +171,8 @@ li {
 
 /* Dropdown and Elements */
 .dropDown-menu {
-  /* border: 4px solid;
-  border-color: red; */
+  border: 4px solid;
+  border-color: red;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -178,6 +183,17 @@ li {
 
 .elements-menu {
   font-size: 1.6em;
+}
+
+
+.todo {
+  border: 4px solid;
+  border-color: red;
+
+  /* text-align: center;
+  display: grid; */
+  /* grid-template-areas: "a b"
+                       "c d"; */
 }
 
 /* Media queries to check width and height of viewport */

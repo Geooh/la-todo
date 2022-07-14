@@ -32,7 +32,7 @@ function ChecklistWeekly() {
         checked.includes(item) ? "checked" : "not-checked-item";
 
         return (
-            <div className="app">
+            <div className="weekly-app-wrapper">
               <div className="checkList">
               <div className="title">Weekly Checklist</div>
                 <hr />

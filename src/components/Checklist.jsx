@@ -34,7 +34,7 @@ function Checklist() {
     checked.includes(item) ? "checked-item" : "not-checked-item";
 
   return (
-    <div className="app">
+    <div className="daily-app-wrapper">
       <div className="checkList">
         <div className="title">Daily Checklist</div>
         <hr />
