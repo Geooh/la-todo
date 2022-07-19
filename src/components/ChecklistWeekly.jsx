@@ -21,11 +21,11 @@ function ChecklistWeekly() {
     };
 
     // Generate string of checked items
-    const checkedItems = checked.length
-        ? checked.reduce((total, item) => {
-            return total + ", " + item;
-        })
-    : "";
+    // const checkedItems = checked.length
+    //     ? checked.reduce((total, item) => {
+    //         return total + ", " + item;
+    //     })
+    // : "";
 
     // Return classes based on whether item is checked
     var isChecked = (item) =>
